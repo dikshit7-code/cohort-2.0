@@ -15,13 +15,13 @@ body {
 
 main {
   width: 100%;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 main section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 main section .top {
   width: 100%;
@@ -34,26 +34,140 @@ main section .bottom {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  background-color: rgb(50, 49, 49);
+  background-color: rgb(28, 28, 28);
   border-radius: 1rem;
   padding: 2rem;
 }
 main section .text {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 main section .text h1 {
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 main section .text p {
   font-weight: 100;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
   opacity: 0.6;
 }
 main section .text button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  border: 2px solid white;
+  color: rgb(250, 250, 250);
+  background-color: transparent;
+}
+main .info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+}
+main .info h4 {
+  font-weight: 500;
+  opacity: 0.6;
+}
+main .info span {
+  font-size: 2.5rem;
+}
+main #second-p,
+main #third-p {
+  font-size: 1.2rem;
+}
+main #second-h1,
+main #third-h1 {
+  font-size: 2.5rem;
+}
+main #second-bottom,
+main #third-bottom {
+  padding: 2rem;
+}
+main #third {
+  margin-top: 1rem;
+}
+main #our-team {
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+main #fourth {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+main #fourth .card {
+  width: 100%;
+  background-size: cover;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+main #fourth .card p {
+  text-transform: uppercase;
+}
+main #fourth .card .top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7rem;
+}
+main #fourth .card .top .icon {
+  border: 1px solid rgba(188, 187, 187, 0.326);
+  padding: 0.7rem;
+  background-color: rgba(75, 74, 74, 0.565);
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+main #fourth .card .bottom {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(188, 187, 187, 0.326);
+  border-radius: 0.2rem;
+  padding: 1rem;
+  background-color: rgba(75, 74, 74, 0.565);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+main #fourth #card1 {
+  background-image: url(https://cdn.prod.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01.webp);
+}
+main #fourth #card2 {
+  background-image: url(https://cdn.prod.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02.webp);
+}
+main #fourth #card3 {
+  background-image: url(https://cdn.prod.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdc1f945f817bf4fd7_team-03.webp);
+}
+main #fifth {
+  margin-top: 1rem;
+}
+main #fifth .bottom .join {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #fifth .bottom .join p {
+  opacity: 0.6;
+}
+main #fifth .bottom .join h4 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+}
+main #fifth .bottom button {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.5rem 1rem;
@@ -85,7 +199,34 @@ main section .text button {
     font-size: 4rem;
   }
   main section .bottom .text p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 2rem;
+  }
+  main .info {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+  }
+  main .info h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+  main .info span {
+    font-size: 4rem;
+  }
+  main #fourth {
+    flex-direction: row;
+  }
+  main #second {
+    flex-direction: row-reverse;
+  }
+  main #second p {
+    display: flex;
+    gap: 1.2rem;
+  }
+  main #third p {
+    display: flex;
+    gap: 1.2rem;
   }
 }/*# sourceMappingURL=style.css.map */
