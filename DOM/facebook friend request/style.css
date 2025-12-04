@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body #card {
+  width: 300px;
+  height: 70vh;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.674);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body #card img {
+  width: 100%;
+  height: 65%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #card #info {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+body #card #name {
+  font-size: 40px;
+}
+body #card #status {
+  font-size: 20px;
+  color: red;
+}
+body #card #buttons #friend {
+  width: 45%;
+  height: 40px;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
