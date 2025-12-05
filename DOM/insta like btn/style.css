@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #container {
+  background-color: white;
+  height: 500px;
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+body #container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+body #container i {
+  color: red;
+  position: absolute;
+  font-size: 80px;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
