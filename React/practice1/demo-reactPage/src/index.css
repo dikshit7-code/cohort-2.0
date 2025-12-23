@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root, .container {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 20px;
+}
+html .nav-bar, body .nav-bar, #root .nav-bar, .container .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+html .nav-bar h1, body .nav-bar h1, #root .nav-bar h1, .container .nav-bar h1 {
+  font-size: 30px;
+}
+html .nav-bar .nav-links, body .nav-bar .nav-links, #root .nav-bar .nav-links, .container .nav-bar .nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+html .nav-bar .nav-links button, body .nav-bar .nav-links button, #root .nav-bar .nav-links button, .container .nav-bar .nav-links button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+}
+html .nav-bar .nav-links a, body .nav-bar .nav-links a, #root .nav-bar .nav-links a, .container .nav-bar .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 100;
+}
+html .nav-bar .book, body .nav-bar .book, #root .nav-bar .book, .container .nav-bar .book {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+html .center-section, body .center-section, #root .center-section, .container .center-section {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 200px;
+  height: 90vh;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-image: url(https://horizoncourts.vercel.app/assets/hero-D_5d4lxE.webp);
+  background-size: cover;
+  background-position: top;
+}
+html .center-section .heading, body .center-section .heading, #root .center-section .heading, .container .center-section .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: rgb(250, 249, 249);
+}
+html .center-section .heading h1, body .center-section .heading h1, #root .center-section .heading h1, .container .center-section .heading h1 {
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+html .center-section .heading p, body .center-section .heading p, #root .center-section .heading p, .container .center-section .heading p {
+  font-size: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+html .center-section .heading button, body .center-section .heading button, #root .center-section .heading button, .container .center-section .heading button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  background-color: rgb(11, 11, 38);
+  color: rgb(254, 254, 254);
+  border-radius: 30px;
+  cursor: pointer;
+}
+html .about, body .about, #root .about, .container .about {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+html .about p, body .about p, #root .about p, .container .about p {
+  width: 50%;
+  font-size: 25px;
+  line-height: 1.6;
+}
+html .about div, body .about div, #root .about div, .container .about div {
+  width: 50%;
+}
+html .about div button, body .about div button, #root .about div button, .container .about div button {
+  padding: 10px 20px;
+  font-size: 25px;
+  border: none;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+}
+html .card-section .card1, body .card-section .card1, #root .card-section .card1, .container .card-section .card1 {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(11, 11, 38);
+}/*# sourceMappingURL=index.css.map */
