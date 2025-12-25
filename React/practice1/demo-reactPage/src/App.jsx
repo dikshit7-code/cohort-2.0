@@ -3,6 +3,8 @@ import NavBar from './Components/NavBar.jsx'
 import CenterSection from './Components/CenterSection.jsx'
 import About from './Components/About.jsx'
 import Cards from './Components/Cards.jsx'
+import More from './Components/More.jsx'
+import Footer from './Components/Footer.jsx'
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <CenterSection />
       <About />
       <Cards />
+      <More />
+      <Footer />
     </div>
   )
 }

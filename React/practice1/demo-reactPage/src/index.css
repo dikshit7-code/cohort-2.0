@@ -90,7 +90,7 @@ html .about, body .about, #root .about, .container .about {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
+  margin-top: 70px;
 }
 html .about p, body .about p, #root .about p, .container .about p {
   width: 50%;
@@ -112,32 +112,39 @@ html .about div button, body .about div button, #root .about div button, .contai
 html .card-section, body .card-section, #root .card-section, .container .card-section {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 70px;
 }
-html .card-section .card1, body .card-section .card1, #root .card-section .card1, .container .card-section .card1 {
+html .card-section .card, body .card-section .card, #root .card-section .card, .container .card-section .card {
+  transition: all 0.3s ease;
+}
+html .card-section .card:hover, body .card-section .card:hover, #root .card-section .card:hover, .container .card-section .card:hover {
+  transform: translateY(-10px);
+}
+html .card-section #card1, body .card-section #card1, #root .card-section #card1, .container .card-section #card1 {
   height: 400px;
   width: 400px;
   border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  padding: 20px;
   overflow: hidden;
   color: white;
   background-color: rgb(11, 19, 38);
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
 }
-html .card-section .card1 i, body .card-section .card1 i, #root .card-section .card1 i, .container .card-section .card1 i {
+html .card-section #card1 i, body .card-section #card1 i, #root .card-section #card1 i, .container .card-section #card1 i {
   font-size: 50px;
 }
-html .card-section .card1 p, body .card-section .card1 p, #root .card-section .card1 p, .container .card-section .card1 p {
+html .card-section #card1 p, body .card-section #card1 p, #root .card-section #card1 p, .container .card-section #card1 p {
   font-size: 30px;
   font-weight: 100;
 }
-html .card-section .card1 p span, body .card-section .card1 p span, #root .card-section .card1 p span, .container .card-section .card1 p span {
+html .card-section #card1 p span, body .card-section #card1 p span, #root .card-section #card1 p span, .container .card-section #card1 p span {
   color: rgb(75, 92, 110);
 }
-html .card-section .card1 button, body .card-section .card1 button, #root .card-section .card1 button, .container .card-section .card1 button {
+html .card-section #card1 button, body .card-section #card1 button, #root .card-section #card1 button, .container .card-section #card1 button {
   padding: 10px 20px;
   font-size: 25px;
   border: none;
@@ -146,10 +153,12 @@ html .card-section .card1 button, body .card-section .card1 button, #root .card-
   color: white;
   cursor: pointer;
 }
-html .card-section .card2, body .card-section .card2, #root .card-section .card2, .container .card-section .card2 {
+html .card-section #card2, body .card-section #card2, #root .card-section #card2, .container .card-section #card2 {
   height: 400px;
   width: 400px;
   border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  padding: 20px;
   background-size: cover;
   background-image: url(https://plus.unsplash.com/premium_photo-1661897444024-85bc519db396?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: center;
@@ -159,13 +168,228 @@ html .card-section .card2, body .card-section .card2, #root .card-section .card2
   justify-content: center;
   border-radius: 20px;
 }
-html .card-section .card2 button, body .card-section .card2 button, #root .card-section .card2 button, .container .card-section .card2 button {
+html .card-section #card2 button, body .card-section #card2 button, #root .card-section #card2 button, .container .card-section #card2 button {
   padding: 10px 20px;
   font-size: 25px;
   border: none;
   color: white;
-  background-color: transparent;
+  background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgb(255, 255, 255);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 30px;
   cursor: pointer;
+}
+html .card-section #card3, body .card-section #card3, #root .card-section #card3, .container .card-section #card3 {
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html .card-section #card3 .header, body .card-section #card3 .header, #root .card-section #card3 .header, .container .card-section #card3 .header {
+  margin-bottom: 32px;
+}
+html .card-section #card3 .title, body .card-section #card3 .title, #root .card-section #card3 .title, .container .card-section #card3 .title {
+  font-size: 64px;
+  font-weight: 300;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+html .card-section #card3 .subtitle, body .card-section #card3 .subtitle, #root .card-section #card3 .subtitle, .container .card-section #card3 .subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 16px;
+}
+html .card-section #card3 .description, body .card-section #card3 .description, #root .card-section #card3 .description, .container .card-section #card3 .description {
+  font-size: 15px;
+  color: #718096;
+  line-height: 1.6;
+}
+html .card-section #card3 .levels, body .card-section #card3 .levels, #root .card-section #card3 .levels, .container .card-section #card3 .levels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+html .card-section #card3 .level-row, body .card-section #card3 .level-row, #root .card-section #card3 .level-row, .container .card-section #card3 .level-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+html .card-section #card3 .level-name, body .card-section #card3 .level-name, #root .card-section #card3 .level-name, .container .card-section #card3 .level-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2d3748;
+  min-width: 110px;
+}
+html .card-section #card3 .dots, body .card-section #card3 .dots, #root .card-section #card3 .dots, .container .card-section #card3 .dots {
+  display: flex;
+  gap: 6px;
+  flex: 1;
+}
+html .card-section #card3 .dot, body .card-section #card3 .dot, #root .card-section #card3 .dot, .container .card-section #card3 .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #4299e1;
+}
+html .card-section #card3 .level-count, body .card-section #card3 .level-count, #root .card-section #card3 .level-count, .container .card-section #card3 .level-count {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+  min-width: 30px;
+  text-align: right;
+}
+html .more, body .more, #root .more, .container .more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  margin-top: 70px;
+  gap: 40px;
+}
+html .more .section1, body .more .section1, #root .more .section1, .container .more .section1 {
+  font-size: 25px;
+  color: rgb(56, 56, 56);
+}
+html .more .section2, body .more .section2, #root .more .section2, .container .more .section2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+}
+html .more .section2 h5, body .more .section2 h5, #root .more .section2 h5, .container .more .section2 h5 {
+  font-size: 50px;
+}
+html .more .section2 p, body .more .section2 p, #root .more .section2 p, .container .more .section2 p {
+  color: rgb(54, 54, 54);
+}
+html .footer-section, body .footer-section, #root .footer-section, .container .footer-section {
+  width: 100%;
+  height: 40vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: stretch;
+  margin-top: 70px;
+}
+html .info-card, body .info-card, #root .info-card, .container .info-card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+html .badge, body .badge, #root .badge, .container .badge {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1.5px solid #2d3748;
+  border-radius: 25px;
+  font-size: 14px;
+  color: #2d3748;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 32px;
+}
+html .info-card h2, body .info-card h2, #root .info-card h2, .container .info-card h2 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+html .explore-btn, body .explore-btn, #root .explore-btn, .container .explore-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #1a202c;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: transform 0.2s;
+}
+html .explore-btn:hover, body .explore-btn:hover, #root .explore-btn:hover, .container .explore-btn:hover {
+  transform: translateX(4px);
+}
+html .arrow, body .arrow, #root .arrow, .container .arrow {
+  font-size: 18px;
+}
+html .image-card, body .image-card, #root .image-card, .container .image-card {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+}
+html .training-card, body .training-card, #root .training-card, .container .training-card {
+  background-image: url(https://horizoncourts.vercel.app/assets/tennis-D0iQoQOU.webp);
+}
+html .court-card, body .court-card, #root .court-card, .container .court-card {
+  color: black;
+  background-image: url(https://images.unsplash.com/photo-1519611103964-90f61a50d3e6?q=80&w=1168&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+}
+html .card-badge, body .card-badge, #root .card-badge, .container .card-badge {
+  display: inline-block;
+  padding: 10px 24px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 25px;
+  font-size: 14px;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 24px;
+}
+html .card-content, body .card-content, #root .card-content, .container .card-content {
+  margin-top: auto;
+  padding: 24px;
+  color: white;
+}
+html .card-title, body .card-title, #root .card-title, .container .card-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+html .card-description, body .card-description, #root .card-description, .container .card-description {
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+html .card-actions, body .card-actions, #root .card-actions, .container .card-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+html .icon-btn, body .icon-btn, #root .icon-btn, .container .icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  font-size: 18px;
+}
+html .icon-btn:hover, body .icon-btn:hover, #root .icon-btn:hover, .container .icon-btn:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=index.css.map */
