@@ -1,9 +1,33 @@
-import React from 'react'
+import styles from './style';
+import {Navbar, Hero, Stats, Business, Billing, CardDeal, Testimonials, Clients, CTA, Footer} from './components';
 
 const App = () => {
   return (
     <div className='bg-primary w-full overflow-hidden'>
-      <h1>Hello World!</h1>
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth} text-white`}>
+          <Navbar/>
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth} text-white`}>
+          <Hero/> 
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.padding} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth} text-white`}>
+          <Stats/> 
+          <Business/> 
+          <Billing/> 
+          <CardDeal/> 
+          <Testimonials/> 
+          <Clients/> 
+          <CTA/> 
+          <Footer/>
+        </div>
+      </div>
     </div>
   )
 }
